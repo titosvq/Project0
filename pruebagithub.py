@@ -10,3 +10,4 @@ nacimiento = input("Introduce tu año de nacimiento")
 edad = 2021 - int(nacimiento)
 print(f'Tu edad es {edad} años')
 
+print("Restaurando la consola en VS CODE")
