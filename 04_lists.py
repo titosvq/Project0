@@ -7,11 +7,6 @@ print(my_list)
 print(len(my_list))
 print(type(my_list))
 
-print(my_list[0])
-print(my_list.count("Adolfo")) # Cuenta cuantas veces aparece un elemento en la lista
-print(my_list.index("Adolfo")) # Devuelve el indice de un elemento en la lista
-print(my_list.index("Adolfo", 1)) # Devuelve el indice de un elemento en la lista a partir de un indice
-
 edad, altura, nombre, apellido = my_list
 
 print(apellido)
@@ -59,9 +54,5 @@ print(my_new_list)
 
 my_new_list.sort() # Ordena los elementos de forma ascendente
 print(my_new_list)
-
-list_int = [8, 7, 4, 4, 5, 6, 7]
-print(list_int[1:4]) # Devuelve los elementos de la posicion 1 a la 4 sin incluir la 1
-print(list_int[0:4])
 
 print(3 in list_int) #Buscar un elemento dentro de la lista, una forma de respuesta true or false
