@@ -1,1 +1,2 @@
-print("Hola chavaleeeeees se actualiza el texto!")
+print("Hola Project0!")
+print("Cambios de estructura en el repositorio")
