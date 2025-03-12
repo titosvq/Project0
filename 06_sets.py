@@ -35,5 +35,4 @@ mi_nuevo_set = mi_set.union(mi_otro_set) # Almacenamos el union en la variable, 
 print(mi_nuevo_set)
 print(mi_nuevo_set.difference(mi_set)) # Quita los elementos del set indicado
 
-del mi_set
-# print(mi_set) Daría error, porque mi_set ya no estaría definido al utilizar del para borrarlo.
+del mi_set # print(mi_set) Daría error, porque mi_set ya no estaría definido al utilizar del para borrarlo.
