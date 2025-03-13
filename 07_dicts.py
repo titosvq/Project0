@@ -45,3 +45,8 @@ my_new_dict = dict.fromkeys(my_dict) # Otra utilidad, combinar las keys de otro 
 print(my_new_dict)
 my_new_dict = dict.fromkeys(my_dict, ("Marian", "De la Vega")) # Mete los valores a todas las claves
 print(my_new_dict)
+
+print(list(my_new_dict))
+print(list(my_new_dict))  
+print(tuple(my_new_dict))  
+print(set(my_new_dict))     
