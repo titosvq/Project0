@@ -2,7 +2,7 @@
 
 # No es una estructura ordenada, ordena por hash
 # Un set no admite repetidos
-# Acceso a elementos y busqueda no funciona
+# Acceso a elementos y búsqueda no funciona por la propia definición del tipo de dato
 
 mi_set = set()
 print(type(mi_set))
@@ -11,7 +11,7 @@ mi_set = {"Adolfo", 36, "Utrera"}
 print(type(mi_set))
 print(len(mi_set))
 
-mi_set.add("Lopez")
+mi_set.add("López")
 print(mi_set)
 
 print("Utrera" in mi_set)
@@ -31,7 +31,7 @@ print(convertido_a_lista[0]) # Cuidado con la ordenación que trae al convertirs
 
 mi_otro_set = {"Andalucía", "España", "Europa"}
 
-mi_nuevo_set = mi_set.union(mi_otro_set) # Almacenamos el union en la variable, podría hacerlo dentro de un print sólamente.
+mi_nuevo_set = mi_set.union(mi_otro_set) # Almacenamos el "union" en la variable, podría hacerlo dentro de un print sólamente.
 print(mi_nuevo_set)
 print(mi_nuevo_set.difference(mi_set))
 

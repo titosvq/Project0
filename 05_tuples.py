@@ -17,7 +17,7 @@ print(sumatupla[2:6])
 mi_tupla = list(mi_tupla) # Convierto en lista
 print(type(mi_tupla))
 
-mi_tupla.insert(3, "sandia") #Convertido en lista si podemos anadir valores
+mi_tupla.insert(3, "sandía") # Convertido en lista si podemos añadir valores
 print(mi_tupla)
 print(len(mi_tupla))
 
