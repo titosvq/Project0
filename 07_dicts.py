@@ -31,9 +31,9 @@ print(my_dict)
 print("Adolfo" in my_dict) # Me dice false, porque aquí está buscando por clave, no por valor
 print("Nombre" in my_dict)
 
-print(my_dict.items())
-print(my_dict.keys())
-print(my_dict.values())
+print(my_dict.items()) # Listado de los ítems
+print(my_dict.keys()) # Listado de todas las claves
+print(my_dict.values()) # Listado de todos los valores
 
 # print(my_dict.fromkeys()) # A este caso no le encuentro utilidad, puede hacerse un diccionario nuevo directamente
 
@@ -43,10 +43,14 @@ print(my_list)
 print(my_new_dict)
 my_new_dict = dict.fromkeys(my_dict) # Otra utilidad, combinar las keys de otro diccionario existente al crear el nuevo
 print(my_new_dict)
-my_new_dict = dict.fromkeys(my_dict, ("Marian", "De la Vega")) # Mete los valores a todas las claves
+my_new_dict = dict.fromkeys(my_dict, ("Marian", "De la Vega")) # Mete el/los valores a todas las claves
 print(my_new_dict)
 
-print(list(my_new_dict))
-print(list(my_new_dict))  
-print(tuple(my_new_dict))  
-print(set(my_new_dict))     
+my_values = my_new_dict.values() # Creamos variable con los valores de my_new_dict
+print(type(my_values)) # Nuevo tipo de dato: dict.values
+
+print(list(my_new_dict)) # Convierto a lista
+print(list(my_new_dict.values())) # Accedo a los valores y creo una lista, me da una lista de valores
+print(dict.fromkeys(list(my_new_dict.values()))) # Dándole vueltas: imprimo diccionario con las keys de una lista creada con los valores del dict my_new_dict
+print(list(dict.fromkeys(list(my_new_dict.values())).keys())) # Muy rebuscado
+print(set(my_new_dict)) # Convierto a set
